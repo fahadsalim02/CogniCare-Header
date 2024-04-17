@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+body{
+    background-color: #d097e3;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+.header {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Spread items horizontally */
+    height: 100px; /* Adjust the height as needed */
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%; /* Make the header stretch across the entire width */
+}
+
+.navbar {
+    align-items: end;
+    text-align: right;
+    display: flex;
+    font-size: larger;
+    margin-right: 50px;
+    overflow: hidden;
+    align-items: end;
+    color: black;
+}
+
+
+/* Style the links inside the navbar */
+.navbar a {
+    color: black;
+    display: inline-block; /* Ensures each link is on its own line */
+    padding: 14px 20px;
+    text-decoration: none;
+    display: flex; /* Make the link behave like a flex container */
+    align-items: center; /* Center the content vertically */
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+    border-radius: 20px;
+    background-color: #ecd9f8;
+}
+
+.navbar a.selected {
+    background-image: linear-gradient(to left, #9D05FA 50%, transparent 50%);
+    background-position: 0 100%;
+    background-size: 10px 2px;
+    background-repeat: repeat-x;
+}
+
+
+/* Site name */
+.site-name {
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    float: left;
+    padding: 14px 20px;
+    color: #9D05FA;
+    text-decoration: none;
+}
